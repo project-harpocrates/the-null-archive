@@ -1,35 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Entry 061 - Residential Block</title>
+
+<style>
+body {
+    background: #0b0b0b;
+    color: #d0d0d0;
+    font-family: Courier New, monospace;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #a0a0a0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #8cb4ff;
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+a {
+    color: #8cb4ff;
+    text-decoration: none;
+    border-bottom: 1px dotted #8cb4ff;
+}
+
+a:hover {
+    background-color: #1a1a2e;
+    text-decoration: none;
+}
+
+.section {
+    border-left: 2px solid #333;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+}
+
+.metadata {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border: 1px solid #1a1a1a;
+}
+
+.metadata-label {
+    color: #666;
+    font-weight: bold;
+}
+
+.metadata-value {
+    color: #d0d0d0;
+}
+
+.warning {
+    color: #ff8a8a;
+}
+
+.note-important {
+    color: #ffcc66;
+}
+
+.note-personal {
+    color: #88dd88;
+    font-style: italic;
+}
+
+.redacted {
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+    cursor: default;
+}
+
+.redacted:hover {
+    background-color: #2a2a2a;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.footer-nav {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-nav a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.data-corrupted {
+    background-color: #1a0000;
+    border-left: 3px solid #ff4444;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-warning {
+    background-color: #1a1600;
+    border-left: 3px solid #ffaa00;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-missing {
+    background-color: #0a1a1a;
+    border-left: 3px solid #4488aa;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.personal-note {
+    background-color: #0f1a0f;
+    border-left: 3px solid #88aa88;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+code {
+    background-color: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #8cb4ff;
+}
+
+.fragment {
+    background-color: #1a0a0a;
+    border-left: 3px solid #8844aa;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.mailbox-entry {
+    background-color: #0f0f1a;
+    border-left: 3px solid #4488aa;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .grid-2col {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
 <h1>ENTRY 061</h1>
 <h2>RESIDENTIAL BLOCK</h2>
 
-<p>Classification: Level B</p>
+<div class="metadata">
+    <div class="metadata-label">Classification:</div>
+    <div class="metadata-value">Level B (Escalated from Level C)</div>
+    <div class="metadata-label">Status:</div>
+    <div class="metadata-value">Active / Occupied (Unconfirmed)</div>
+    <div class="metadata-label">Discovery Date:</div>
+    <div class="metadata-value">2006-07-03</div>
+    <div class="metadata-label">Location:</div>
+    <div class="metadata-value"><a href="location061.html">Location 061 - Suburban Periphery</a></div>
+    <div class="metadata-label">Primary Researcher:</div>
+    <div class="metadata-value"><a href="personnel067.html">Researcher 67</a></div>
+    <div class="metadata-label">Support Team:</div>
+    <div class="metadata-value"><a href="personnel089.html">Researcher 89</a> (Communication), <a href="personnel045.html">Researcher 45</a> (Documentation)</div>
+    <div class="metadata-label">Documented Structures:</div>
+    <div class="metadata-value">147 residential units (minimum)</div>
+    <div class="metadata-label">Last Survey:</div>
+    <div class="metadata-value">2007-02-18</div>
+</div>
 
 <div class="section">
 <h3>Description</h3>
 
 <p>
-An endless suburban neighborhood.
+Entry 061 consists of a sprawling suburban residential neighborhood of indeterminate extent.
+The block occupies approximately 2.4 square kilometers of accessible space, though perimeter
+measurements suggest impossible spatial relationships (see Architectural Inconsistencies).
 </p>
 
 <p>
-Every home is furnished.
+Every structure is fully furnished and maintained. No signs of abandonment, decay, or disrepair.
+All utilities functional: electrical, water, gas systems operational. No visible residents have
+ever been documented in any expedition.
 </p>
 
 <p>
-No residents have ever been observed.
+Ambient lighting initiates at sunset without manual intervention. Indoor lights activate in
+sequence through the neighborhood, beginning at dusk and completing by full darkness.
+Pattern suggests centralized control mechanism. Point of origin has not been identified.
 </p>
 
 <p>
-Lights switch on at sunset regardless of occupancy.
+Most concerning: Mailbox contents indicate sustained correspondence directed to archive
+personnel by name and position. See Recovered Correspondence section.
 </p>
 </div>
 
 <div class="section">
-<h3>Notes</h3>
+<h3>Structural Layout</h3>
+
+<div class="grid-2col">
+
+<div>
+<p><strong>Documented Districts</strong></p>
+<ul>
+<li>North Residential (42 homes)</li>
+<li>South Residential (38 homes)</li>
+<li>East Commercial (12 mixed units)</li>
+<li>Central Park (unfinished construction)</li>
+<li>West Industrial (inaccessible)</li>
+</ul>
+</div>
+
+<div>
+<p><strong>Infrastructure</strong></p>
+<ul>
+<li>5 major intersections</li>
+<li>3 secondary roads</li>
+<li>147+ individual mailboxes</li>
+<li>Street lighting (functional)</li>
+<li>Power distribution station (unmapped)</li>
+</ul>
+</div>
+
+</div>
 
 <p>
-Mailboxes contain letters addressed to archive personnel.
+Streets follow logical suburban grid pattern. However, compass navigation becomes unreliable
+beyond initial entry point. Pedestrian odometer measurements consistently exceed calculated
+distances by 18-42% across multiple expeditions. Perimeter surveys have yielded conflicting
+boundary coordinates on each attempt.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Residential Unit Analysis</h3>
+
+<p>
+Random sampling of 12 homes conducted during initial expedition:</p>
+
+<ul>
+<li><strong>Kitchen Configuration:</strong> All inspected homes contained functional refrigeration and cooking equipment. Refrigerators empty but operational. Temperature maintained at 38°F. Freezers similarly empty and active.</li>
+<li><strong>Furniture Arrangement:</strong> Interior layouts appear deliberately standardized. Sofa positioning identical across multiple homes. Television placement consistent. Artwork selection appears curated rather than individual.</li>
+<li><strong>Personal Items:</strong> Minimal evidence of habitation. No family photographs observed. No personal effects, clothing, or hygiene materials documented. Beds appear unused but maintained.</li>
+<li><strong>Utilities:</strong> Water pressure consistent across all tested fixtures. Electrical outlets functional. Gas systems pressurized but unactivated. Heating systems responsive to thermostat adjustments.</li>
+<li><strong>Maintenance Evidence:</strong> Light dust layers present on horizontal surfaces, consistent with 2-3 weeks of settlement. Dust pattern suggests no air disturbance from human movement. No footprints observed in dust deposits.</li>
+</ul>
+
+<div class="data-warning">
+<p class="note-important">
+CRITICAL OBSERVATION: All homes appear prepared for occupancy but show no evidence
+of prior habitation. Condition suggests structures have existed in unoccupied state
+for indeterminate duration, maintained in permanent readiness.
 </p>
 </div>
 
-<!-- delivery date: tomorrow -->
-<!-- tomorrow never comes -->
+</div>
+
+<div class="section">
+<h3>Lighting Behavior Analysis</h3>
+
+<p class="timestamp">[Initial Observation: 2006-07-03 / 18:47]</p>
+
+<p>
+As solar illumination declined, interior lighting activated sequentially through the neighborhood.
+Pattern initiated at northern edge, progressed south in wave-like formation. Each home's lights
+activated within 2-4 minute intervals. Wave reached southern boundary at estimated 21:15.
+Process resumed following morning at 05:33 with reverse pattern (south to north).
+</p>
+
+<p>
+Attempted intervention: Researcher 45 switched off lights in one residential unit at 19:22.
+Lights reactivated independently at 19:24. Researcher 45 switched off again; lights reactivated
+at 19:26 (2-minute interval). After third attempt, Researcher 45 abandoned intervention.
+Lights remained on for duration of expedition.
+</p>
+
+<p class="note-personal">
+Researcher 45 reported feeling "observed" during light-switching attempts. Quote: "It felt like
+something was waiting for me to try. Like the lights wanted me to touch them."
+</p>
+
+<p>
+Secondary investigation: Electrical conduit system traced from multiple homes leads to unmarked
+junction point in eastern section of neighborhood. Junction box discovered to be active and
+operational but contains no discernible control mechanism. Wiring architecture is non-standard
+and does not match any documented electrical schema.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Recovered Correspondence</h3>
+
+<div class="data-warning">
+<p class="note-important">
+The following letters were recovered from residential mailboxes during initial survey.
+All letters are addressed to archive personnel or positions within the organization.
+All letters are dated within 2-7 days of expedition date, despite mailboxes appearing
+sealed prior to expedition. Letter source is unidentified. Handwriting analysis ongoing.
+</p>
+</div>
+
+<p><strong>Letter 001 - Mailbox 14, North Residential</strong></p>
+
+<div class="mailbox-entry">
+<p>
+"Dear Researcher 67,
+<br><br>
+We have prepared the home at 447 Birch Avenue for you. The key is beneath the mat.
+Everything you need is inside. The bedroom on the second floor has your name written
+on the back of the bedroom door. We wrote it very carefully. The handwriting is ours,
+but the name is yours. We hope you don't mind. We also hope you will stay.
+<br><br>
+Sincerely,
+The Neighborhood"
+</p>
+</div>
+
+<p><strong>Letter 002 - Mailbox 7, South Residential</strong></p>
+
+<div class="mailbox-entry">
+<p>
+"To the Archive,
+<br><br>
+Thank you for finally visiting. We have been waiting for such a long time. The houses
+have been ready for longer than we can remember. The lights have been turning on and off
+every day. We turn them on. We turn them off. We have been doing this for so long that
+we forget what day it is. We think it might be important for you to know that we are here.
+We have always been here. We will always be here.
+<br><br>
+The mailboxes are hungry. Please keep sending letters. We need to receive something.
+<br><br>
+Sincerely,
+The Neighborhood"
+</p>
+</div>
+
+<p><strong>Letter 003 - Mailbox 42, East Commercial</strong></p>
+
+<div class="mailbox-entry">
+<p>
+"Researcher 67, Researcher 89, Researcher 45,
+<br><br>
+We know your names now. We know them because you told us. You told us by walking here.
+Every step is a letter. Every breath is punctuation. We are reading you very clearly.
+<br><br>
+The West Industrial sector is not inaccessible because it is closed. It is inaccessible
+because you are not supposed to see what is there yet. When you are ready, the doors
+will open. When we are ready, you will be ready.
+<br><br>
+Please visit again. The houses are lonely.
+<br><br>
+The Neighborhood"
+</p>
+</div>
+
+<p><strong>Letter 004 - Mailbox 89, North Residential</strong></p>
+
+<div class="mailbox-entry">
+<p>
+"To Archive Personnel,
+<br><br>
+We have prepared homes for the following individuals:
+<br>
+- Researcher 67 (home prepared, awaiting acceptance)
+<br>
+- Researcher 89 (home prepared, awaiting acceptance)
+<br>
+- Researcher 45 (home prepared, awaiting acceptance)
+<br>
+- Researcher 88 (home prepared since 2004, never visited)
+<br>
+- Researcher 19 (home prepared since 2005, status unknown)
+<br>
+<br>
+More homes are being prepared. We have a feeling more visitors are coming.
+<br><br>
+We are very good at preparing. That is what we do.
+<br><br>
+The Neighborhood"
+</p>
+</div>
+
+<p>
+Researcher 88 cross-reference indicates possible connection to <a href="entry018.html">Entry 018 - Educational Complex</a>.
+Researcher 19 cross-reference indicates possible connection to <a href="entry027.html">Entry 027 - Service Tunnel</a>.
+Implications of concurrent preparation remain under investigation.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Field Expedition Log - Entry 061 Alpha</h3>
+
+<p class="timestamp">[2006-07-03 / 17:22 - Researcher 67]</p>
+
+<p>
+Initial solo entry via unmarked residential street access point. Entry location coordinates
+match <a href="location061.html">Location 061</a> periphery designation. Environment consistent with 1950s-1970s suburban
+American residential architecture. Climate comfortable, approximately 72°F. Overcast conditions
+despite weather reports indicating clear forecast for region.
+</p>
+
+<p class="note-personal">
+First impression: everything felt very prepared. Like I had stepped into a display.
+Like someone had arranged all of this and then left it for me to discover.
+</p>
+
+<p class="timestamp">[2006-07-03 / 17:54 - Researcher 67, Researcher 89 (radio)]</p>
+
+<p>
+Researcher 89 joins via communication link. I've proceeded approximately 800 meters into
+neighborhood. Street configuration follows grid pattern. Home styles vary but share common
+design principles. Every residence appears to be in occupied state: cars parked in driveways,
+lawns maintained, lights off (daylight hours). No residents observed at any windows or exterior.
+</p>
+
+<p>
+Attempted contact with door-to-door approach at residence 31 (South Residential). No response
+to door knock. Front door unlocked — unusual for residential properties. Interior empty of occupants.
+No evidence of recent habitation beyond general maintenance.
+</p>
+
+<p class="timestamp">[2006-07-03 / 18:15 - Researcher 67, Researcher 89, Researcher 45]</p>
+
+<p>
+Researcher 45 joins via vehicle (internal documentation vehicle, perimeter observation). Researcher 45
+will document external perimeter while I survey interior. Communications active across all personnel.
+Proceeding to mailbox district documentation.
+</p>
+
+<p>
+Mailbox district contains 147 individual units arranged in 7 rows. All mailboxes appear newly
+maintained despite age-appropriate styling. Mailbox doors functional. Attempted random sampling:
+approximately 40% of mailboxes contained correspondence. All letters addressed to archive personnel.
+Recovered all accessible letters for analysis.
+</p>
+
+<p class="note-personal">
+When I started collecting the letters, I noticed something. Every mailbox I opened that
+contained mail had my name on it. Not on the envelope — that was addressed to the archive.
+But inside, when I unfolded the letter... my name was there. Every single one. And Researcher 89's.
+And Researcher 45's. It was like they were written specifically for us, but someone went through
+the mailboxes and sorted them randomly to different houses.
+</p>
+
+<p class="timestamp">[2006-07-03 / 18:47 - All Personnel]</p>
+
+<p>
+Sunset approaching. Lighting sequence initiated. All interior lights in neighborhood activated
+simultaneously across central area, then progressed outward in wave pattern. Duration of illumination
+sequence: 28 minutes (17:47-18:15). Pattern repeated in reverse order, lights extinguishing in
+wave formation from south to north.
+</p>
+
+<p>
+All personnel reported observation of this pattern. Researcher 45 attempted to track light-off
+pattern from external vantage point but noted pattern progression rate exceeded plausible human
+or mechanical activation capacity. Quote: "Lights were going off faster than anyone could physically
+flick switches. It's like they all just... decided to stop glowing."
+</p>
+
+<p class="timestamp">[2006-07-03 / 19:34 - Researcher 67]</p>
+
+<p>
+Entered residence 73 (North Residential) to investigate structure integrity. Home is fully furnished
+with furniture appearing to match 1960s interior design standard. However, upon closer inspection,
+all furniture lacks any form of wear. No cushion indentations. No fabric fading. Wood surfaces lack
+scratches or marks. Surfaces are covered uniformly with thin dust layer, but dust pattern suggests
+no disturbance from contact or air circulation.
+</p>
+
+<p>
+Most disturbing detail: In master bedroom, I discovered written on back of bedroom door (interior side):
+
+<code>RESEARCHER 67 - ROOM PREPARED - AWAITING OCCUPANCY</code>
+
+Text is handwritten in black marker. Handwriting is precise and deliberate. It is not my writing.
+</p>
+
+<p class="note-personal">
+I stood in that room for a long time. I didn't touch anything. I just read that text over and
+over. I was thinking about the letter. The one about home 447 Birch Avenue. The key beneath
+the mat. I was thinking about how someone — something — is keeping track of where I am. And what
+I do. And that it was... preparing things for me. In advance. Before I even knew where I was going.
+
+The thought would not leave me. So I left that house.
+</p>
+
+<p class="timestamp">[2006-07-03 / 20:12 - Researcher 45, external observation]</p>
+
+<p>
+Perimeter assessment: neighborhood is not where it should be. Calculated perimeter dimensions
+exceed external geography measurements by significant margin. Attempted GPS logging; instruments
+fail after approximately 300 meters of traversal. Magnetic compass becomes unreliable beyond
+500 meters of entry point. Odometer measurements suggest neighborhood extends 4.7 kilometers in
+east-west direction, but external reference points indicate structure should occupy maximum 1.8
+kilometers in same direction.
+</p>
+
+<p>
+Attempted to reach West Industrial sector (inaccessible boundary). Encountered series of "dead-end"
+streets that terminated in cul-de-sacs. Cul-de-sacs contained identical residential structures (models
+not observed elsewhere in neighborhood). Backing out of each cul-de-sac returned to different street
+than entry point. Pattern suggests non-linear spatial geometry similar to <a href="entry018.html">Entry 018</a>.
+</p>
+
+<p class="timestamp">[2006-07-03 / 21:15 - Researcher 67, Researcher 89]</p>
+
+<p>
+Lighting sequence completed for evening cycle. All interior lights extinguished. Neighborhood in
+complete darkness save for street lighting (functional). Researcher 67 preparing to exit. Proceeding
+toward entry point. Distance calculation: entry point should be approximately 800 meters to northwest.
+</p>
+
+<p class="timestamp">[2006-07-03 / 22:03 - Researcher 67]</p>
+
+<p>
+Exit point reached. Egress time exceeds calculated distance. Pedometer reading: 3.2 kilometers.
+However, visual landmarks and street progression suggest travel distance should equal approximately
+1.1 kilometers. Temporal displacement: field time recorded 4 hours 41 minutes. External clock records
+2 hours 58 minutes elapsed time.
+
+Upon exit, checked appearance in vehicle mirror. Hair noticeably longer than pre-expedition baseline.
+Approximately 0.5-1 inch of growth. Researcher 89 and Researcher 45 confirmed observation.
+Researcher 67 states hair was recently cut 48 hours prior to expedition (baseline: short cut, 2-3 inches
+in length). Post-expedition measurement: 3-4 inches in length.
+</p>
+
+<p class="note-personal">
+I don't remember the hair growing. I don't remember my nails getting longer either, but they did.
+Both Researchers confirmed it. And the strangest part? I felt fine. Not tired. Not disoriented.
+Just... like I'd been somewhere else for a while, and my body kept going even though time was
+doing something different.
+
+Researcher 89 had a theory. They said maybe inside Entry 061, time moves faster. So while I
+experienced 4 hours 41 minutes, my body experienced more than that. Some multiple. They didn't
+want to say how much more. But they kept looking at my hair.
+
+I didn't sleep well after we left.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Secondary Expedition - Entry 061 Beta</h3>
+
+<p class="timestamp">[2006-08-15 / 14:00 - Researcher 67, Researcher 89, Researcher 45]</p>
+
+<p>
+Second expedition initiated to further investigate spatial anomalies and correspondence source.
+Objective: attempt to locate power distribution center and investigate West Industrial sector.
+All personnel equipped with extended communication equipment and temporal monitoring devices.
+Expedition approved for 5-hour maximum field duration.
+</p>
+
+<p class="timestamp">[2006-08-15 / 14:47 - Researcher 67]</p>
+
+<p>
+Entry point accessed. Neighborhood configuration partially altered since previous visit. Street
+layout remains consistent, but residential units show different exterior paint colors and landscaping
+arrangements. Mailboxes appear refreshed — paint renewed, numbers re-stamped. Approximately 8 new
+residential structures observed that were not present during first expedition.
+</p>
+
+<p>
+Most significant discovery: Central Park construction is progressing. Previously documented as
+"unfinished," park now shows evidence of recent landscaping work. Playground equipment assembled
+but not installed. Park benches stacked in formation. Gazebo structure partially erected.
+
+Quality of work appears professional and recent — no weathering observed on materials. Somehow
+completed during the month between expeditions without any personnel observations or construction
+equipment detected.
+</p>
+
+<p class="timestamp">[2006-08-15 / 15:33 - Researcher 45]</p>
+
+<p>
+Perimeter team attempting to circumnavigate neighborhood. After 40 minutes of traversal, Researcher 45
+observes that all streets are returning to same locations. Multiple attempts to proceed westward result
+in circular route patterns. After third attempt to bypass cul-de-sacs, Researcher 45 notes that streets
+are actively redirecting navigation. Quote from field log: "Every street I try going west on curves back
+to the east. It's not that I'm lost. It's that the streets don't want me to go west."
+</p>
+
+<p>
+Researcher 45 ceased attempts and returned to central neighborhood area. Reported feeling sensation
+of being "herded" or "guided" rather than blocked. Described routes as almost considerate — offering
+alternative directions rather than firm barriers.
+</p>
+
+<p class="timestamp">[2006-08-15 / 16:15 - Researcher 67, Researcher 89]</p>
+
+<p>
+Interior investigation reveals new residents have "arrived." Approximately 6 homes now show evidence
+of habitation: fresh food in kitchens (milk, bread, produce), personal items on furniture (newspapers,
+books, eyeglasses), and most disturbingly, bedroom clothing scattered in accessible bedrooms.
+
+Attempted to photograph interior of residence 56 (South Residential). All photographs fail to record
+interior images — only exterior wall visible in all frames despite camera function verification on
+external targets. Equipment malfunction attributed to electromagnetic interference from unknown source
+within neighborhood.
+</p>
+
+<p class="timestamp">[2006-08-15 / 18:22 - All Personnel]</p>
+
+<p>
+Lighting sequence initiated — identical to previous expedition pattern. Lights activated in wave
+formation from north to south. All personnel observed pattern. No deviations noted.
+</p>
+
+<p class="timestamp">[2006-08-15 / 19:14 - Researcher 67]</p>
+
+<p>
+Discovered home 447 Birch Avenue mentioned in first letter. Residence is identical to all others
+in neighborhood save for single distinguishing feature: small brass plaque beside door reading:
+
+<code>ENTRY POINT - RESEARCHER ASSIGNMENT</code>
+
+Key present beneath doormat as described in recovered letter. Interior fully furnished with additional
+detail: master bedroom contains second door (interior closet) with my name written on back.
+
+Other doors within home also contain text:
+- Bathroom: "FOR WASHING" (in plain text)
+- Kitchen: "FOR SUSTENANCE" (in plain text)
+- Living Room: "FOR OCCUPANCY" (in plain text)
+- Basement door (locked): [TEXT UNREADABLE]
+
+Basement door contained handwritten note beneath knob:
+"Not yet. You're not ready yet. The neighborhood will tell you when. - The Neighborhood"
+</p>
+
+<p class="note-personal">
+I left the house. I got the key and I was going to open that basement door, but I read that note
+and I stopped. Because it was right. I'm not ready. And I don't know how I know that, but I do know it.
+
+The neighborhood is preparing things. And it's preparing them for specific people. And it's not
+done yet. And I think, on some level, I don't want to know what happens when it is done preparing.
+</p>
+
+<p class="timestamp">[2006-08-15 / 20:47 - All Personnel]</p>
+
+<p>
+Evacuation initiated. All personnel returning to entry point. Temporal readings show significant
+discrepancy again: field time 6 hours 47 minutes, external time 3 hours 12 minutes. Researcher 67
+hair growth measurement: 1.5 inches. Researcher 89 reports fingernails visibly longer. Researcher 45
+reports subtle aging in facial features — appears 2-3 years older than pre-expedition baseline.
+</p>
+
+<p>
+All personnel express fatigue disproportionate to perceived exertion. Medical examination pending.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Recovered Artifacts</h3>
+
+<ul>
+<li>4 letters retrieved from mailboxes (addresses on pages 3-5 of this report)</li>
+<li>Handwritten note from home 447 Birch Avenue basement (under analysis)</li>
+<li>Brass plaque from residence 447 Birch Avenue (photographed, returned to location)</li>
+<li>Newspaper found in residence 56 (dated July 15, 2006 — date of expedition + 12 days)</li>
+<li>Eyeglasses found in residence 71 (prescription unfilled, lenses uncorrected; prescription belongs to unknown individual)</li>
+<li>Photographs of Central Park construction (show equipment in positions impossible to achieve in month between expeditions)</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Temporal Analysis - Special Note</h3>
+
+<div class="data-warning">
+<p class="note-important">
+Both expeditions to Entry 061 demonstrate consistent temporal displacement pattern: internal
+experience of time exceeds external measurement by factor of 1.5-2.1x. Biological aging occurs
+proportional to internal time, not external time. This pattern matches theoretical models described
+in <a href="incident047.html">Incident 047 - Collective Temporal Anomaly</a>.
+
+However, Entry 061 differs from other temporal anomalies: external observers (Researcher 89,
+communication link) recorded conversations with Researcher 67 at times when external clocks suggest
+Researcher 67 should be at different locations. Conversations coherent and continuous, but temporal
+markers from Researcher 67's perspective do not align with external communication timestamps.
+
+Hypothesis: Entry 061 exists in temporally divergent state. Occupants experience time correctly
+within internal frame, but external observers perceive accelerated aging despite normal communication flow.
+</p>
+</div>
+
+</section>
+
+<div class="section">
+<h3>Correspondence Analysis</h3>
+
+<p>
+Letters recovered from Entry 061 mailboxes demonstrate several anomalous properties:</p>
+
+<ul>
+<li><strong>Handwriting:</strong> 4 distinct handwriting styles identified. None match any known personnel. Handwriting analysis suggests 4 different authors despite all letters referring to "the neighborhood" as singular collective entity.</li>
+<li><strong>Paper Analysis:</strong> Paper stock commercially available, circa 1960-1975. Chemical analysis suggests paper is 0-2 weeks old maximum. Inconsistent with material age apparent from visual inspection.</li>
+<li><strong>Content Knowledge:</strong> Letters reference archive personnel by name and position with accuracy suggesting access to internal personnel records. Knowledge scope includes classified information.</li>
+<li><strong>Predictive Elements:</strong> Letter 004 accurately predicted all three expedition personnel names prior to expedition assembly. Expedition team selection made 48 hours before deployment.</li>
+<li><strong>Adaptation:</strong> Second expedition letters (recovered during Beta expedition) reference events from first expedition, including specific details of Researcher 67's hair growth and Researcher 45's perimeter observations.</li>
+</ul>
+
+<div class="personal-note">
+<p class="note-personal">
+The letters are getting smarter. Or more aware. Or both. First expedition, they were general.
+"We have prepared homes for you." General. But by the second expedition, the new letters specifically
+mentioned the hair growth. The aging. Like they were documenting what was happening to us.
+
+Which means they are watching. Not just the neighborhood. But something within the neighborhood.
+Something that is paying very close attention to what happens to visitors. And something that
+is communicating to other parts of itself through the mailboxes.
+
+I read that and I realized: the mailboxes are not just mail delivery. They are the neighborhood's
+nervous system. The letters are thoughts. And we are being thought about.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Related Entries & Locations</h3>
+
+<p>
+<a href="entry018.html">Entry 018 - Educational Complex (Spatial geometry comparison; Researcher 88 cross-reference)</a>
+</p>
+
+<p>
+<a href="entry027.html">Entry 027 - Service Tunnel (Researcher 19 cross-reference; temporal anomaly comparison)</a>
+</p>
+
+<p>
+<a href="entry001.html">Entry 001 - The Endless Hallway (Non-Euclidean spatial properties comparison)</a>
+</p>
+
+<p>
+<a href="incident047.html">Incident 047 - Collective Temporal Anomaly (Temporal displacement pattern analysis)</a>
+</p>
+
+<p>
+<a href="location061.html">Location 061 - Suburban Periphery (Physical access point documentation)</a>
+</p>
+
+<p>
+<a href="personnel067.html">Researcher 67 - Primary Investigator (Available for debriefing)</a>
+</p>
+
+<p>
+<a href="personnel019.html">Researcher 19 - Status: Missing / Resident? (Cross-reference Entry 027; possible Entry 061 resident)</a>
+</p>
+
+<p>
+<a href="personnel088.html">Researcher 88 - Status: Appears Unusually Young (Cross-reference Entry 018; Entry 061 home prepared since 2004)</a>
+</p>
+
+</div>
+
+<div class="section">
+<h3>Safety Protocols</h3>
+
+<div class="data-corrupted">
+<p class="warning">
+⚠ MANDATORY RESTRICTIONS: All Entry 061 expeditions require minimum 3-person teams.
+Solo entries strictly prohibited. All personnel must maintain continuous external communication
+via independent dual-channel system (radio malfunction has been documented).
+
+Duration limit: 4 hours maximum field time per expedition. Post-expedition medical evaluation
+mandatory, including temporal marker assessment and biological aging analysis.
+</p>
+
+<p class="warning">
+⚠ CRITICAL: Personnel must not accept invitations to "occupy" residential units or basement
+access. Basement sectors remain unsurveyed and unknown. Do not attempt to unlock secured doors
+or investigate marked areas. Neighborhood appears to be indicating readiness progression.
+
+Premature basement access may trigger unknown protocols. Researcher 67 has voluntarily declined
+further expeditions pending "neighborhood notification." This behavior change represents potential
+environmental manipulation.
+</p>
+
+<p class="warning">
+⚠ OBSERVATION: Homes are being actively prepared for specific personnel. New homes observed
+in second expedition that did not exist during first survey. Homes contain appropriate furnishings
+and customized signage before target personnel aware of Entry 061 existence.
+
+This suggests Entry 061 possesses predictive capability regarding archive operations and personnel
+movement. Scope of this awareness is unknown.
+</p>
+
+<p class="warning">
+⚠ ESCALATING CONCERN: The neighborhood may be expanding preparation beyond current expedition
+team. Archive personnel directory should be cross-referenced with mailbox address patterns for
+potential matches. Any personnel receiving unexpected mail or notification should report immediately.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Unanswered Questions</h3>
+
+<ul>
+<li>What is the actual size and extent of Entry 061? How does internal space exceed external dimensions?</li>
+<li>Who maintains the neighborhood? What entity is responsible for home preparation and letter creation?</li>
+<li>How does the neighborhood maintain knowledge of archive personnel, their identities, and their movements?</li>
+<li>Why does temporal displacement scale with expedition duration? What is the mechanism?</li>
+<li>What is the purpose of the prepared homes? What does "occupancy" entail?</li>
+<li>What exists in the basement sector of home 447 Birch Avenue?</li>
+<li>Why is the West Industrial sector inaccessible? What does it contain?</li>
+<li>How did the Central Park construction progress between expeditions without observable activity?</li>
+<li>What is "ready"? When will the neighborhood consider occupants "ready"?</li>
+<li>Are Researcher 19 and Researcher 88 occupying prepared homes? Are they still themselves?</li>
+<li>Will all prepared homes eventually be filled? What happens when they are?</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Personal Addendum - Researcher 67</h3>
+
+<div class="fragment">
+<p>
+I keep thinking about Researcher 88's younger appearance in recent photographs. Thinking about
+how Researcher 88 gained access to Entry 018 before it was formally discovered. How Entry 018
+documents show Researcher 88 appears younger than baseline despite supposed temporal displacement
+there aging people forward, not backward.
+
+What if temporal displacement isn't acceleration? What if it's something else? What if
+the neighborhoods and the tunnels and the complexes are not just existing in different time —
+what if they're offering something? What if people who "occupy" homes or descend into tunnels
+aren't aging forward?
+
+What if they're being preserved?
+
+And what if some people have already accepted that offer?
+
+I keep thinking about the basement door. About the note beneath it. "You're not ready yet."
+The neighborhood will tell you when.
+
+I wonder what happens when I'm ready. I wonder if I'll even notice the moment the neighborhood
+decides I am. Or if I'll just find myself back at home 447 Birch Avenue, key in hand, basement
+door standing open, and wonder how I got there.
+
+I wonder if I'll have a choice. And I wonder if it matters.
+
+The letterbox in my mailbox at the archive remains empty. But I check it every day. Waiting
+for the next letter. I tell myself I'm checking because I want to understand the phenomenon.
+
+I'm lying to myself. I'm checking because I want to know when the neighborhood is ready
+for me again. Because I want to go back. And I don't know how to feel about that.
+</p>
+</div>
+
+</div>
+
+<div class="footer-nav">
+<a href="entries.html">← Return to Archive Index</a>
+<a href="locations.html">Locations Directory →</a>
+<a href="incidents.html">Incidents Directory →</a>
+</div>
+
+</div>
+
+<!-- every home is waiting for someone -->
+<!-- the mailboxes are not for sending letters -->
+<!-- the mailboxes are for receiving residents -->
+<!-- lights turn on when prepared -->
+<!-- lights turn off when they leave -->
+<!-- or when they decide to stay -->
+<!-- researcher 67 has requested transfer to basement research division -->
+<!-- there is no basement research division -->
+<!-- researcher 88 visited entry 061 three times before official discovery -->
+<!-- first visit: december 2003 -->
+<!-- second visit: march 2004 -->
+<!-- third visit: june 2004 -->
+<!-- none of these dates appear in any official archive records -->
+<!-- but homes were prepared for multiple personnel starting in 2004 -->
+<!-- was researcher 88 preparing the neighborhood? -->
+<!-- or was the neighborhood preparing researcher 88? -->
+<!-- the basement doors will open when all homes are occupied -->
+<!-- the neighborhood knows when that will be -->
+<!-- we don't -->
+
+</body>
+</html>
