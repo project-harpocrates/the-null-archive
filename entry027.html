@@ -1,29 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Entry 027 - Service Tunnel</title>
+
+<style>
+body {
+    background: #0b0b0b;
+    color: #d0d0d0;
+    font-family: Courier New, monospace;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #a0a0a0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #8cb4ff;
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+a {
+    color: #8cb4ff;
+    text-decoration: none;
+    border-bottom: 1px dotted #8cb4ff;
+}
+
+a:hover {
+    background-color: #1a1a2e;
+    text-decoration: none;
+}
+
+.section {
+    border-left: 2px solid #333;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+}
+
+.metadata {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border: 1px solid #1a1a1a;
+}
+
+.metadata-label {
+    color: #666;
+    font-weight: bold;
+}
+
+.metadata-value {
+    color: #d0d0d0;
+}
+
+.warning {
+    color: #ff8a8a;
+}
+
+.note-important {
+    color: #ffcc66;
+}
+
+.note-personal {
+    color: #88dd88;
+    font-style: italic;
+}
+
+.redacted {
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+    cursor: default;
+}
+
+.redacted:hover {
+    background-color: #2a2a2a;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.footer-nav {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-nav a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.data-corrupted {
+    background-color: #1a0000;
+    border-left: 3px solid #ff4444;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-warning {
+    background-color: #1a1600;
+    border-left: 3px solid #ffaa00;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-missing {
+    background-color: #0a1a1a;
+    border-left: 3px solid #4488aa;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.personal-note {
+    background-color: #0f1a0f;
+    border-left: 3px solid #88aa88;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+code {
+    background-color: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #8cb4ff;
+}
+
+.tunnel-map {
+    background-color: #0f0f0f;
+    border: 1px solid #333;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 0.85em;
+    overflow-x: auto;
+}
+
+.fragment {
+    background-color: #1a0a0a;
+    border-left: 3px solid #8844aa;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
 <h1>ENTRY 027</h1>
 <h2>SERVICE TUNNEL</h2>
 
-<p>Classification: Level B</p>
+<div class="metadata">
+    <div class="metadata-label">Classification:</div>
+    <div class="metadata-value">Level B</div>
+    <div class="metadata-label">Status:</div>
+    <div class="metadata-value">Active / Sealed (Partial)</div>
+    <div class="metadata-label">Discovery Date:</div>
+    <div class="metadata-value">2005-04-12</div>
+    <div class="metadata-label">Location:</div>
+    <div class="metadata-value">Subsurface Access Point (Basement Level 3, <a href="location018.html">Location 018</a>)</div>
+    <div class="metadata-label">Primary Researcher:</div>
+    <div class="metadata-value"><a href="personnel041.html">Researcher 41</a></div>
+    <div class="metadata-label">Support Team:</div>
+    <div class="metadata-value"><a href="personnel054.html">Researcher 54</a> (Communication), <a href="personnel019.html">Researcher 19</a> (Aborted)</div>
+    <div class="metadata-label">Tunnel Extent:</div>
+    <div class="metadata-value">Unknown (minimum 2.8 km mapped)</div>
+    <div class="metadata-label">Last Active Contact:</div>
+    <div class="metadata-value">2005-04-12 / 16:33</div>
+</div>
 
 <div class="section">
 <h3>Description</h3>
 
 <p>
-A maintenance tunnel extending beneath multiple archive locations.
+Entry 027 consists of a maintenance tunnel system beneath multiple archive locations,
+including portions underlying <a href="entry018.html">Entry 018</a> and <a href="location004.html">Location 004</a>.
+The tunnel appears to serve as infrastructure for power distribution, water systems,
+and communication conduits — though equipment function and origin remain unidentified.
 </p>
 
 <p>
-Directional signs point toward locations not found in any map.
+Physical characteristics suggest mid-to-late 20th century construction. Pipes are
+labeled in English and <span class="redacted">REDACTED</span> script. Electrical conduits bear no
+manufacturer markings but remain fully operational.
 </p>
 
 <p>
-Electrical systems remain operational.
+Directional signage throughout the tunnel system points toward locations that do not
+exist on any recovered archive map. Some signs reference place names that appear in
+no known geography or language database.
 </p>
 
 <p>
-Power source unknown.
+Most critically: the tunnel's layout appears to shift location relative to surface structures,
+suggesting non-linear or impossible spatial relationships similar to <a href="entry001.html">Entry 001</a>
+but in inverse — the surface is constant; the subsurface is variable.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Infrastructure Systems</h3>
+
+<ul>
+<li><strong>Electrical:</strong> Three main conduit lines, all energized. Voltage consistent (~220V AC, 60Hz). Power source not visible despite extensive tracing. No transformer stations discovered.</li>
+<li><strong>Water:</strong> Two main pipes (supply and return). Water clear, odorless, chemically neutral. Flow rate constant (~150 GPM) regardless of valve settings.</li>
+<li><strong>HVAC:</strong> Ventilation system actively circulating air. Air quality: standard composition. No visible deterioration despite apparent age of system.</li>
+<li><strong>Communication:</strong> Copper telephone/data lines, partially corroded but still carrying signal (source unknown).</li>
+<li><strong>Lighting:</strong> Wall-mounted fixtures at 30-meter intervals. Fully operational. No apparent power source connection visible; fixtures appear to be passive/self-powered or drawing from external source.</li>
+<li><strong>Unknown Systems:</strong> Additional conduits and pipes present with no identifiable purpose. Labels on unknown systems are either worn beyond legibility or written in unidentified language.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Directional Signage Analysis</h3>
+
+<div class="data-warning">
+<p class="note-important">
+Recovered sign destinations have been cross-referenced with all known archive locations
+and external geographic databases. No matches found for any of the following locations.
 </p>
 </div>
 
-<!-- do not follow arrows marked EXIT -->
-<div class="footnote"
-<p><a href="google.com">---> EXIT <---</a></p>
+<p><strong>Documented Sign Destinations:</strong></p>
+
+<ul>
+<li><code>← MAINTENANCE / 340m</code></li>
+<li><code>→ OBSERVATION / 220m</code></li>
+<li><code>← RECORDS (ACTIVE) / 180m</code></li>
+<li><code>→ STAFF QUARTERS / 520m</code></li>
+<li><code>← PROCESSING / 90m</code></li>
+<li><code>→ MEDICAL / 410m</code></li>
+<li><code>← STORAGE / 310m</code></li>
+<li><code>→ TRAINING / 280m</code></li>
+<li><code>← QUARANTINE / 680m</code></li>
+<li><code>→ ARCHIVE CENTRAL / 1240m</code></li>
+</ul>
+
+<p>
+All signs appear to be original installation rather than added documentation.
+Some signs show wear consistent with 30-40 years of exposure. However, paint
+color and material composition analysis suggests manufacture date within last 5 years.
+</p>
+
+<p>
+Most disturbing: <strong>directional arrows on certain signs appear to change orientation when observed indirectly</strong> (i.e., viewed in peripheral vision or after brief absence). Photographic evidence contradicts researcher recollection on 7 documented instances.
+</p>
+
 </div>
+
+<div class="section">
+<h3>Field Expedition Log - Entry 027 Alpha</h3>
+
+<p class="timestamp">[2005-04-12 / 13:22 - Researcher 41]</p>
+
+<p>
+Initial entry through maintenance access in basement Level 3 of Location 018.
+Small metal door, unmarked. Behind door: narrow stairwell descending approximately
+12 meters. At bottom, tunnel opens into maintenance corridor. Walls concrete, pipes
+visible along ceiling and floor. Lighting functional. Temperature ~15°C, pleasant
+despite underground location. No dust accumulation despite obvious age. Air fresh,
+slightly metallic smell — possibly from pipes or electrical systems.
+</p>
+
+<p class="note-personal">
+First impression: someone maintains this regularly. The cleanliness is unsettling.
+Empty places are supposed to decay. This place doesn't.
+</p>
+
+<p class="timestamp">[2005-04-12 / 13:47 - Researcher 41, Researcher 54]</p>
+
+<p>
+Researcher 54 joins via radio. I've proceeded approximately 600 meters along primary
+tunnel. Encountered first major junction. Five branches, all marked. Selected "RECORDS (ACTIVE)"
+corridor — shortest distance marker (180m). Walked entire distance. Corridor terminated at solid
+concrete wall. No door, no window, no penetration. Stood at wall for 2 minutes listening.
+Distinct sound of machinery or fans behind wall. Very quiet, very steady. Like something
+that's been running for a very long time.
+</p>
+
+<p class="note-personal">
+I placed my hand on the wall. It was warm. Not uncomfortably warm, but definitely
+warmer than ambient. Like something alive on the other side.
+</p>
+
+<p class="timestamp">[2005-04-12 / 14:33 - Researcher 41, Researcher 54]</p>
+
+<p>
+Backtracked to junction. Attempted "MAINTENANCE" corridor. This corridor showed signs
+of actual use — recent footprints in dust (contradicts earlier observation of no dust),
+coffee stains on equipment housing, a maintenance log mounted on wall dated 2005-04-11.
+Log entries are illegible — handwriting severely deteriorated as if written by different
+people progressively losing motor control. Final entry appears to be simple repeated character:
+"77777777777" spanning entire final page.
+</p>
+
+<p class="note-personal">
+I took a photograph of the log. When I looked at it, I felt watched. Not paranoid.
+Genuine sensation of attention. I left that area quickly.
+</p>
+
+<p class="timestamp">[2005-04-12 / 14:58 - Researcher 41]</p>
+
+<p>
+Selected "STAFF QUARTERS" corridor. Walked for estimated 400+ meters. Corridor narrowed
+progressively — started at 4 meters wide, ended at approximately 2 meters wide. Along walls,
+I noticed doors. Regular intervals, every 20 meters or so. All doors identical: metal frame,
+no visible handle or lock mechanism, number painted above each: 01, 02, 03, etc. Counted 18
+doors before abandoning count.
+</p>
+
+<p>
+One door (number 07) was partially open. I could see into the space — small room, maybe
+3x4 meters. Bare concrete walls. Single wooden chair in center of room. On chair: a pile of
+clothing. Men's clothing, dated style (perhaps 1970s-1980s?). Appeared laundered and folded.
+Neatly placed. As if waiting for someone.
+</p>
+
+<p class="note-personal">
+I didn't enter that room. I know I should have documented it further, but something
+about that chair made me feel like I was intruding on someone's privacy. Which is insane.
+But it felt true.
+</p>
+
+<p class="timestamp">[2005-04-12 / 15:22 - Researcher 41, Researcher 54]</p>
+
+<p>
+Researcher 54 advised me to return. I complied. During return, noticed that the tunnel
+I had traveled was longer than documented distance. Odometer (pedometer) reading: 1840 meters.
+Calculated distance based on sign markers and corridor counts: 680 meters. When I mentioned
+this to Researcher 54, there was extended silence. Then: "Researcher 41, you've been in
+the tunnel for 3 hours. It's 15:33 on our surface clocks."
+</p>
+
+<p class="note-personal">
+I checked my watch. 15:15. Impossible. I've been walking for maybe 90 minutes.
+Researcher 54 has been monitoring my signal continuously. I asked if the signal had
+glitched. Researcher 54 said the signal was clear but the time seemed to have advanced
+strangely. Quote: "Your voice sounded older for a moment. Then normal again. I might
+have been hearing things."
+</p>
+
+<p class="timestamp">[2005-04-12 / 16:03 - Researcher 41]</p>
+
+<p>
+I'm approaching the exit stairwell. The tunnel behind me looks longer than I remember.
+The pipes on the ceiling — I don't remember them being that thick. The lighting seems
+dimmer. I'm moving faster now. I can see the stairwell entrance ahead. It's approximately
+30 meters away. I've been walking for what feels like 5 minutes but hasn't gotten closer.
+</p>
+
+<p class="note-personal">
+I'm going to document this more thoroughly but I need to leave. This isn't fear exactly.
+It's more like I'm becoming aware of something watching me become aware of it. That
+recursive feeling. I need daylight.
+</p>
+
+<p class="timestamp">[2005-04-12 / 16:33 - Researcher 41]</p>
+
+<p>
+I've exited the tunnel. Emerged into basement Level 3, Location 018. The exit time matches
+the entry time. No temporal displacement recorded on surface clocks. However, pedometer
+confirms 3.8 kilometers walked. Tunnels should not extend 3.8 kilometers beneath Location 018.
+Surface measurements of Location 018 footprint: maximum 400 meters diagonal.
+</p>
+
+<p>
+Researcher 54 received my exit confirmation at 16:33. Researcher 19 was present during
+exit. Both confirmed I appeared disoriented but otherwise normal. No visible aging or
+time-based deterioration.
+</p>
+
+<p class="note-personal">
+When I handed Researcher 54 the maintenance log photograph, they went very quiet.
+Asked me if I was certain about the date on the log. I said yes — 2005-04-11.
+Researcher 54 then showed me a maintenance log they'd recovered from Location 018 archives.
+Same format, same handwriting deterioration in the final pages. That log was dated 1987-03-15.
+Final page: "77777777777"
+
+I asked how that was possible. They didn't answer. Just said, "Maybe maintenance in the
+tunnel operates on a different timeline. Maybe it always has."
+</p>
+
+</div>
+
+<div class="section">
+<h3>Follow-up Expedition - Entry 027 Beta (Aborted)</h3>
+
+<p class="timestamp">[2005-04-19 / 10:00 - Researcher 19, Researcher 54]</p>
+
+<p>
+Second expedition initiated. Researcher 19 volunteered for extended survey. Objectives:
+locate "ARCHIVE CENTRAL" sector, document all accessible rooms, attempt to identify power source.
+Researcher 54 maintains surface communication. Expedition approved for 4-hour duration maximum.
+</p>
+
+<p class="timestamp">[2005-04-19 / 11:15 - Researcher 19]</p>
+
+<p>
+Initial descent and navigation normal. Researcher 19 following Researcher 41's mapped route
+to primary junction. Communications clear. Proceeding to "ARCHIVE CENTRAL" corridor (1240m
+distance marker).
+</p>
+
+<p class="timestamp">[2005-04-19 / 13:47 - Researcher 54 (Log Entry)]</p>
+
+<p>
+Last communication from Researcher 19 at 13:23. Researcher 19 reported reaching a corridor
+junction not marked on Researcher 41's map. Multiple tunnels branching in non-linear pattern.
+Researcher 19 appeared confused by layout but remained calm. Instructed to maintain present
+position while I consulted records.
+</p>
+
+<p>
+When I returned to communication (approximately 20 minutes), Researcher 19 did not respond
+to repeated hails. Equipment functional on my end. Signal present but no response. Final
+audio fragment recovered from transmission: "[sounds of machinery/fans increasing in volume]
+...they're still here... I can... no, that's not... the door... the door is [inaudible]."
+</p>
+
+<p class="timestamp">[2005-04-19 / 14:15 - Archive Recovery Team]</p>
+
+<p>
+Emergency response initiated. Recovery team descended into tunnel system. Proceeded along
+Researcher 41's mapped route and Researcher 54's guidance. Upon reaching the junction where
+Researcher 19 reported last contact, team encountered completely unfamiliar tunnel configuration.
+Primary and secondary routes were "missing" — corridors that appeared on Researcher 41's odometer
+documentation do not exist in physical form. The area is a solid wall of concrete in three directions
+and a single narrow tunnel (not previously documented) in the fourth direction.
+</p>
+
+<p>
+Recovery team did not pursue the undocumented tunnel. Team returned to surface.
+</p>
+
+<p class="timestamp">[2005-04-19 / 15:30 - Archive Administration]</p>
+
+<p>
+Researcher 19 has not returned. Search efforts limited by tunnel instability and
+non-Euclidean spatial properties. Researcher 19 is presumed: lost, trapped, or relocated
+to undocumented sector.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Recovered Artifacts</h3>
+
+<p>
+Items recovered from tunnel system or returned with Researcher 41:</p>
+
+<ul>
+<li>Maintenance log (2005-04-11), final entries illegible</li>
+<li>Maintenance log (recovered from Location 018 archives, 1987-03-15), final entries identical pattern to 2005 log</li>
+<li>Hand-drawn map (author unknown, recovered from MAINTENANCE corridor), showing tunnel layout completely different from documented structure</li>
+<li>Folded note (found in clothing pile in Room 07), contains single line of handwriting: "Please don't follow the arrows." Handwriting age unknown, possibly recent, possibly decades old.</li>
+<li>Coffee cup (found on equipment housing in MAINTENANCE corridor), still warm to touch, contents unidentifiable liquid matching no known substance</li>
+</ul>
+
+<div class="personal-note">
+<p class="note-personal">
+The cup was the detail that broke something in me. It was warm. Whatever left it there
+was recent. But the cup itself appeared to be from the 1980s. Brand no longer in production.
+Either someone is down there maintaining things from a time that no longer exists, or
+something down there is maintaining itself across time. Neither option is acceptable.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Analysis: The "MAINTENANCE" Problem</h3>
+
+<p>
+Multiple pieces of evidence suggest an active maintenance presence in Entry 027:</p>
+
+<ul>
+<li>Recent footprints observed despite sealed access point (only one known entry/exit)</li>
+<li>Maintenance logs dated within days of expeditions</li>
+<li>Warm coffee cup with recent use pattern</li>
+<li>Clothing in Room 07 arranged with deliberate care</li>
+<li>All infrastructure systems fully operational without visible power source</li>
+<li>Lighting systems functional despite showing age consistent with 1980s installation</li>
+</ul>
+
+<p>
+<strong>Hypothesis A:</strong> Multiple maintenance personnel exist in tunnel system, possibly
+unaware of surface archive operations or deliberately isolated.
+</p>
+
+<p>
+<strong>Hypothesis B:</strong> Maintenance is automated/mechanical, running on systems that
+predate current archive operations by decades, possibly predating the archive entirely.
+</p>
+
+<p>
+<strong>Hypothesis C:</strong> Maintenance exists in a temporal state disconnected from surface
+reality — the tunnel system is "current" to a different time period, and maintenance staff
+are performing tasks for that period.
+</p>
+
+<p>
+<strong>Hypothesis D:</strong> The tunnel system itself is alive or self-aware, and "maintenance"
+is its ongoing biological/mechanical process.
+</p>
+
+<p>
+Current working theory: Hypothesis C combined with elements of Hypothesis D. The tunnel
+appears to exist in multiple temporal states simultaneously, accessible from the present
+but containing artifacts and personnel from previous decades. The "maintenance" is continuous
+across time rather than continuous through time.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Related Entries & Locations</h3>
+
+<p>
+<a href="entry001.html">Entry 001 - The Endless Hallway (Spatial anomalies comparison)</a>
+</p>
+
+<p>
+<a href="entry018.html">Entry 018 - Educational Complex (Tunnel system underlies this location)</a>
+</p>
+
+<p>
+<a href="location004.html">Location 004 - Institutional Complex (Partial tunnel access confirmed)</a>
+</p>
+
+<p>
+<a href="incident047.html">Incident 047 - Collective Temporal Anomaly (Temporal displacement pattern comparison)</a>
+</p>
+
+<p>
+<a href="personnel041.html">Researcher 41 - Lead Investigator (Available for debriefing)</a>
+</p>
+
+<p>
+<a href="personnel019.html">Researcher 19 - Status: Missing (Last contact: Entry 027 tunnel system)</a>
+</p>
+
+</div>
+
+<div class="section">
+<h3>Safety Protocols</h3>
+
+<div class="data-corrupted">
+<p class="warning">
+⚠ ENTRY RESTRICTION: All further expeditions to Entry 027 are indefinitely suspended
+pending structural and temporal analysis. The tunnel system does not behave according to
+normal spatial or temporal mechanics.
+</p>
+
+<p class="warning">
+⚠ CRITICAL: Do not follow directional signage in tunnel system. Arrows have demonstrated
+behavioral properties inconsistent with static objects. Destinations referenced on signs
+may not exist, may exist in alternate states, or may exist only during specific temporal windows.
+</p>
+
+<p class="warning">
+⚠ MANDATORY: Any personnel who enter Entry 027 must maintain constant surface communication.
+Radio silence exceeding 5 minutes warrants immediate emergency response and evacuation.
+Do not attempt to extend expeditions beyond 3 hours field time.
+</p>
+
+<p class="warning">
+⚠ OBSERVATION: Researcher 19 remains missing. No recovery attempts recommended until
+Entry 027 temporal properties are better understood. If Researcher 19 is found, personnel
+should note: the tunnel may be operating on a different calendar date than surface reality.
+Researcher 19 may not have aged normally.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Unanswered Questions</h3>
+
+<ul>
+<li>What is the actual layout of the tunnel system? Why does it appear different each traversal?</li>
+<li>Who is/was the maintenance staff? Where do they exist on the timeline?</li>
+<li>What is the power source for the infrastructure systems?</li>
+<li>Why do distances measured underground not correlate with surface geography?</li>
+<li>What are the rooms in the STAFF QUARTERS corridor? Why is clothing present?</li>
+<li>What happened to Researcher 19? Are they still in the tunnel system?</li>
+<li>Why do maintenance logs from 1987 and 2005 contain identical final entries?</li>
+<li>Why does the note say "don't follow the arrows"? Are the arrows themselves dangerous?</li>
+<li>Are the arrows changing direction, or is our perception of them changing?</li>
+<li>What is the tunnel system actually maintaining? What is it for?</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Personal Addendum - Researcher 41</h3>
+
+<div class="fragment">
+<p>
+I keep thinking about those rooms. Room 07 with the chair and the folded clothing.
+I keep wondering if someone was waiting for me. Or if someone will wait for whoever
+goes down next time. The clothing looked my size. The style is old but the fit seemed...
+specific. Like it was chosen for me before I was ever born.
+</p>
+
+<p>
+I also keep thinking about that warm coffee cup. Who drinks coffee in a tunnel that
+hasn't been accessed for 20 years? Who drinks coffee the same way, using the same cup,
+across 18 years of maintenance logs?
+</p>
+
+<p>
+The worst thought: what if I'm still down there? What if I never actually left? What if
+this report is being written by something that looks like me, something that walked out of
+the tunnel wearing my face? What if Researcher 19 is sitting in Room 08 right now, in clothing
+that will fit perfectly, waiting for someone else to find them? Or waiting to become like the rest.
+</p>
+
+<p>
+The tunnel is still there. The exit is still open. And sometimes I hear footsteps in empty
+corridors above ground. Footsteps that don't match anything. Footsteps that sound like they're
+following a path, a routine, a schedule that's been running since before I was born.
+</p>
+
+<p>
+I wonder when my shift is.
+</p>
+</div>
+
+</div>
+
+<div class="footer-nav">
+<a href="entries.html">← Return to Archive Index</a>
+<a href="locations.html">Locations Directory →</a>
+<a href="incidents.html">Incidents Directory →</a>
+</div>
+
+</div>
+
+<!-- maintenance never stops -->
+<!-- the tunnel was built for someone who hasn't arrived yet -->
+<!-- researcher 19 returned to surface exactly 18 days later, unchanged, with no memory of the tunnel -->
+<!-- actually wait they did return? check incident logs -->
+<!-- all the doors are numbered but only numbered to 23 -->
+<!-- room 23 is always locked from the inside -->
+<!-- the coffee cup had a name written inside the handle. it was researcher 41's name -->
+<!-- but it was written decades ago -->
+<!-- the clothing in room 07 has fit every person who entered the tunnel -->
+<!-- no matter their size -->
+<!-- maintenance rosters from 1982 to present all show the same names -->
+<!-- except the handwriting changes -->
+<!-- gets worse each year -->
+<!-- and researcher 19 also has the same name as someone on the 1992 maintenance roster -->
+<!-- that person was reported missing in 1992 -->
+<!-- please don't follow the arrows -->
+
+</body>
+</html>
