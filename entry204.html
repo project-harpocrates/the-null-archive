@@ -5,110 +5,688 @@
 <title>Entry 204 - Hallway Network</title>
 
 <style>
-body{
-    background:#0b0b0b;
-    color:#d0d0d0;
-    font-family:Courier New, monospace;
-    margin:40px;
+body {
+    background: #0b0b0b;
+    color: #d0d0d0;
+    font-family: Courier New, monospace;
+    margin: 40px;
+    line-height: 1.6;
 }
 
-.section{
-    border:1px solid #333;
-    padding:15px;
-    margin-top:20px;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-a{
-    color:#8cb4ff;
+h1 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #a0a0a0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #8cb4ff;
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+a {
+    color: #8cb4ff;
+    text-decoration: none;
+    border-bottom: 1px dotted #8cb4ff;
+}
+
+a:hover {
+    background-color: #1a1a2e;
+}
+
+.section {
+    border-left: 2px solid #333;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+}
+
+.metadata {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    margin: 20px 0;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border: 1px solid #1a1a1a;
+}
+
+.metadata-label {
+    color: #666;
+    font-weight: bold;
+}
+
+.metadata-value {
+    color: #d0d0d0;
+}
+
+.warning {
+    color: #ff8a8a;
+}
+
+.note-important {
+    color: #ffcc66;
+}
+
+.note-personal {
+    color: #88dd88;
+    font-style: italic;
+}
+
+.redacted {
+    background-color: #2a2a2a;
+    color: #2a2a2a;
+    cursor: default;
+}
+
+.redacted:hover {
+    background-color: #2a2a2a;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.footer-nav {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-nav a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.data-corrupted {
+    background-color: #1a0000;
+    border-left: 3px solid #ff4444;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-warning {
+    background-color: #1a1600;
+    border-left: 3px solid #ffaa00;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.data-missing {
+    background-color: #0a1a1a;
+    border-left: 3px solid #4488aa;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.field-note {
+    background-color: #0a0a1a;
+    border-left: 2px solid #555;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+code {
+    background-color: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #8cb4ff;
+}
+
+.fragment {
+    background-color: #1a0a0a;
+    border-left: 3px solid #8844aa;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 1.4;
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>ENTRY 204</h1>
 <h2>HALLWAY NETWORK</h2>
 
-<p>
-Classification: Level B
-</p>
-
-<p>
-Status: Restricted
-</p>
+<div class="metadata">
+    <div class="metadata-label">Classification:</div>
+    <div class="metadata-value">Level B (Escalated)</div>
+    <div class="metadata-label">Status:</div>
+    <div class="metadata-value">Active / Unmappable</div>
+    <div class="metadata-label">Discovery Date:</div>
+    <div class="metadata-value">2002-07-14</div>
+    <div class="metadata-label">Access Point:</div>
+    <div class="metadata-value"><a href="location204.html">Location 204</a> (Primary); Multiple secondary access points documented</div>
+    <div class="metadata-label">Primary Researcher:</div>
+    <div class="metadata-value"><a href="personnel019.html">Researcher 19</a></div>
+    <div class="metadata-label">Secondary Researchers:</div>
+    <div class="metadata-value"><a href="personnel088.html">Researcher 88</a>, <a href="personnel156.html">Researcher 156</a></div>
+    <div class="metadata-label">Documented Network Size:</div>
+    <div class="metadata-value">3.2-7.8 kilometers of corridors (measurements inconsistent)</div>
+    <div class="metadata-label">Last Update:</div>
+    <div class="metadata-value">2008-12-03 (partial; see discrepancy report)</div>
+</div>
 
 <div class="section">
-
 <h3>Description</h3>
 
 <p>
-Entry 204 refers to a connected system of hallways
-appearing beneath multiple archived locations.
+Entry 204 refers to a connected system of underground corridors and hallways of unknown
+construction date and architectural origin. The network appears to exist beneath multiple
+documented locations. Access points have been identified at <a href="location018.html">Location 018</a>,
+<a href="location092.html">Location 092</a>, <a href="location142.html">Location 142</a>, and at minimum
+six additional undocumented sites.
 </p>
 
 <p>
-Maps generated from separate expeditions
-cannot be reconciled into a coherent structure.
+The corridors themselves present as institutional-style passages: linoleum flooring (pattern varies),
+fluorescent overhead lighting (60Hz frequency), institutional beige-gray walls. On initial observation,
+the network appears mundane and unremarkable. This assessment changes upon extended exploration.
 </p>
 
 <p>
-Passages frequently intersect themselves.
+The fundamental anomaly: the network does not conform to three-dimensional Euclidean geometry.
+Maps generated from separate expeditions cannot be reconciled into a coherent spatial structure.
+Passages frequently intersect themselves. Corridors return to previous locations despite clear
+directional intent. The network appears to reorganize between expeditions, though evidence of
+physical reconstruction has never been observed.
 </p>
 
 <p>
-Certain corridors appear to connect locations
-previously believed unrelated.
+Most critically: certain corridors appear to connect locations previously believed geographically
+unrelated or physically impossible to connect. Entry 204 may represent a unified subsurface structure
+underlying multiple archived locations, or alternatively, may be accessing external spaces via unmapped
+passages.
 </p>
 
 </div>
 
 <div class="section">
+<h3>Structural Overview</h3>
 
-<h3>Incident Summary</h3>
+<ul>
+<li><strong>Primary Concourse:</strong> ~340 meters linear corridor, relatively stable between expeditions, leads from Location 204 entry point toward "hub junction" (see below)</li>
+<li><strong>Secondary Passages:</strong> Estimated 30-47 branching corridors (count varies); most lead to "junction dead-ends" — intersections that appear to loop back on themselves</li>
+<li><strong>Central Hub:</strong> Large octagonal chamber with eight doorways; believed central to network structure; reproduced in multiple entries (see Entry 011, Entry 142, Entry 018)</li>
+<li><strong>Eastern Sector:</strong> Leads toward Location 018 (entry/exit point variable; sometimes accessible, sometimes sealed)</li>
+<li><strong>Northern Shaft:</strong> Access point to Entry 092 stairwell structure (connection point moves between expeditions)</li>
+<li><strong>Maintenance Tunnels:</strong> Smaller passages with exposed utility infrastructure; appear older than main corridors; lead to sealed sections marked "NO ENTRY — ACTIVE SYSTEMS"</li>
+<li><strong>Sub-basement Levels:</strong> Multiple references in wall signage; actual access points unlocated despite targeted searches</li>
+<li><strong>Undocumented Extensions:</strong> Passages leading beyond network boundaries; all attempts to traverse result in disorientation and involuntary return to central hub area</li>
+</ul>
 
+</div>
+
+<div class="section">
+<h3>Mapping Failures - Documented Evidence</h3>
+
+<div class="data-warning">
+<p class="note-important">
+CRITICAL OBSERVATION: The following represent objective mapping attempts, each conducted with
+standard survey equipment, directional consistency, and documented checkpoint methodology. All have failed.
+</p>
+</div>
+
+<p class="timestamp">[Survey 204-A / 2002-07-14 - Researcher 19, Researcher 88]</p>
+
+<div class="field-note">
 <p>
-During Survey 204-7, a team traveled east
-for approximately six hours.
+Initial cartography attempt using traditional compass navigation and step counting. Team entered
+at Location 204, proceeded east along Primary Concourse. Counted steps: approximately 22 per 10 meters
+(verified with measuring wheel). Recorded magnetic bearings at 50-meter intervals. After 340 meters,
+reached Central Hub octagonal chamber. Recorded hub dimensions: ~60 meters diameter octagon.
 </p>
 
 <p>
-The team emerged from a doorway
-leading into Location 018.
+Selected eastern exit from hub (marked with directional signage "E — SECTOR 7"). Proceeded.
+After 120 meters, secondary junction appeared (not present in previous 50-meter checkpoint).
+Verified compass reading: 087°, consistent with eastern progression. Continued. After additional
+180 meters, team reached a large circular chamber. Documentation indicated this space was not
+previously mapped. Took photographs. Measured chamber diameter: ~50 meters. Advanced through
+southern passage of chamber.
 </p>
 
 <p>
-Location 018 is over 900 kilometers away
-from the survey entry point.
+After 95 meters, team reached what appeared to be Primary Concourse entry point. Recognition markers
+matched: electrical outlet configuration, specific floor damage pattern, wall discoloration. Team was
+back at starting location after only 395 meters of documented eastward progression. Compass maintained
+consistent eastern bearing. Step count was accurate. Hallway did not loop physically. Yet team returned
+to start point.
+</p>
+
+<p>
+Conclusion: Hallway network does not follow planar geometry.
+</p>
+</div>
+
+<p class="timestamp">[Survey 204-B / 2002-09-03 - Researcher 88, Researcher 156]</p>
+
+<div class="field-note">
+<p>
+Second cartography attempt. Team used GPS units (accuracy ±10 meters), digital surveying equipment,
+and continuous video documentation. Entered at Location 204. Proceeded north along Secondary Passage C.
+GPS units functioned normally in Primary Concourse. At junction with Secondary Passage C, GPS units
+experienced signal degradation. By 50 meters into Secondary Passage C, GPS signals had become unreliable:
+devices showed position shifting 15-40 meters between recordings despite team's steady forward movement.
+</p>
+
+<p>
+Continued without GPS. After 220 meters of northward progression, corridor opened into large
+atrium (previously undocumented). Atrium featured skylights with actual daylight penetration visible.
+Team noted this was underground complex. Skylights should not have shown external daylight. Researcher 156
+photographed skylight. Photograph clearly shows sky, clouds, birds. Exterior lighting quality consistent
+with external illumination, not artificial lighting.
+</p>
+
+<p>
+Team proceeded through atrium's western passage. After 140 meters, team reached section containing
+external doorway. Doorway was open, revealing outside street-level environment. Team could see parked
+cars, sidewalk, building entrance across street. Location was confirmed as matching Location 018 site
+(approximately 8.3 kilometers from Location 204 surface location). Team had traversed ~360 meters
+underground to cover 8.3 kilometers of horizontal distance.
+</p>
+
+<p>
+Researchers selected not to exit. Returned to documented passage. Return journey took 380 meters.
+Researchers re-emerged at Central Hub instead of Primary Concourse entry point. Team exited via
+original Location 204 access.
+</p>
+
+<p>
+Conclusion: Network connects locations that should be geographically separate. Actual distance
+traveled does not correspond with horizontal displacement achieved.
+</p>
+</div>
+
+<p class="timestamp">[Survey 204-C / 2004-02-17 - Researcher 19]</p>
+
+<div class="field-note">
+<p>
+Solo mapping attempt. Researcher 19 entered with detailed hand-drawn map from Survey 204-B,
+attempting to replicate previous route to "atrium with skylights." Followed identical passage
+selections (Primary Concourse east, Secondary Junction 4, tertiary north passage).
+</p>
+
+<p>
+After 220 meters of northward progression (matching Survey 204-B), corridor terminated at sealed
+doorway labeled "AUTHORIZED PERSONNEL ONLY." Doorway not present in Survey 204-B documentation.
+Researcher attempted alternate routes. All northward passages now led to sealed sections or dead-ends.
+Return route took researcher through unrecognized corridor sections. After 340 meters of retracing,
+researcher re-emerged at Central Hub.
+</p>
+
+<p>
+Conclusion: Network configuration has changed. Previous passages are no longer accessible via same
+route. Atrium with skylights cannot be currently located.
+</p>
+</div>
+
+<p class="timestamp">[Survey 204-D / 2005-11-12 - Researcher 156]</p>
+
+<div class="field-note">
+<p>
+Detailed documentation attempt using continuous video recording and audio narration. Researcher 156
+proceeded through Primary Concourse. Video shows 340-meter corridor leading to Central Hub (documented
+correctly). At Central Hub, researcher selected western exit. Video shows corridor extending westward.
+After 50 meters, video shows secondary branch point. Researcher continued straight.
+</p>
+
+<p>
+At 180 meters into western passage, video captures the moment of corridor awareness change. In video,
+researcher turns corner. Next 10 meters of corridor appears to curve left — a gradual arc consistent
+with 40-meter radius turn. However, video simultaneously shows wall on researcher's right that should not
+exist if corridor is curving left. Geometry becomes inconsistent. Researcher reports disorientation. Stops
+walking. In video, researcher sits on floor.
+</p>
+
+<p>
+Video continues recording. For approximately 3 minutes, the camera captures the same wall section repeatedly.
+But in time-lapse review, the wall section shifts position gradually across multiple frames. Wall is clearly
+moving. Or camera is drifting. Or both are moving relative to a third reference frame.
+</p>
+
+<p>
+After 3-minute immobile period, researcher stands, continues walking. Immediately re-emerges at Primary
+Concourse entry point. Return to start accomplished in 15 meters.
+</p>
+
+<p>
+Video evidence preserved. Geometric analysis inconclusive.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Temporal Anomalies Within Network</h3>
+
+<div class="data-warning">
+<p class="note-important">
+⚠ TIME DISTORTION: Researchers consistently report temporal discrepancies. Internal duration perception
+does not match external time measurement.
+</p>
+</div>
+
+<ul>
+<li><strong>Survey 204-A:</strong> Internal time (step counting, perceived passage duration): 1 hour 47 minutes. Surface time (monitoring team): 2 hours 34 minutes. Discrepancy: +47 minutes external.</li>
+<li><strong>Survey 204-B:</strong> Internal time (researcher reporting): ~1 hour 20 minutes. Surface time: 3 hours 12 minutes. Discrepancy: +112 minutes external. Researchers reported experiencing only ~80 minutes of subjective time despite 192 minutes of external elapsed time.</li>
+<li><strong>Survey 204-D:</strong> Video timestamp: 47 minutes total. Researcher's reported duration: "approximately 45 minutes." Surface time: 1 hour 23 minutes. Discrepancy: +36 minutes external. However, video shows 3-minute stationary period, suggesting actual movement was ~44 minutes, yet external monitoring showed 83 minutes.</li>
+<li><strong>Pattern Analysis:</strong> External time consistently exceeds internal perception. Ratio variable (1.1x to 2.4x). Ratio correlates with network sector complexity: simple linear passages show minimal discrepancy; complex junction areas show maximum discrepancy.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Cross-Location Connection Evidence</h3>
+
+<p>
+Multiple expeditions have confirmed direct passage connections to other archived locations:
+</p>
+
+<ul>
+<li><strong>Entry 018 - Educational Complex:</strong> Direct passage confirmed (Survey 204-B); contains furniture and architectural elements matching Entry 018 documentation; skylight atrium connects to Entry 018 surface access point</li>
+<li><strong>Entry 092 - Recursive Stairwell:</strong> Northern passages lead to stairwell structure; junction point location varies between expeditions; appears accessible on approximately 60% of expeditions</li>
+<li><strong>Entry 142 - Shopping Structure:</strong> Rumors (unconfirmed) of passage connections; structural parallels exist (octagonal hub space appears in both entries); no direct passage yet documented</li>
+<li><strong>Entry 011 - Observation Deck:</strong> Researcher 156 reported recognizing architectural elements from Entry 204 network reproduced in city skyline visible from observation deck; suggests cartographic or sensory connection</li>
+<li><strong>Location 018 - Parallel Corridor:</strong> Designation unclear; may be location within Entry 018 complex or separate structural entity; referenced in multiple corridor signage</li>
+</ul>
+
+<p>
+The network appears to serve as a unified subsurface transportation system connecting multiple
+otherwise geographically separated locations. Alternatively, all locations may be components of a
+larger integrated structure, with Entry 204 serving as primary access axis.
 </p>
 
 </div>
 
 <div class="section">
+<h3>Architectural & Environmental Constants</h3>
 
-<h3>Personnel Note</h3>
-
-<blockquote>
-"The map changed while I was drawing it."
-<br>
-- Researcher 88
-</blockquote>
+<ul>
+<li><strong>Flooring:</strong> Linoleum, pattern varies by section (appears to update between expeditions). Observable wear patterns inconsistent with age. Damage appears fresh despite decades of potential usage.</li>
+<li><strong>Walls:</strong> Institutional beige-gray paint over plaster. Occasional water damage marks, none actively leaking. No mold growth despite apparent moisture. Paint appears re-applied periodically; different paint colors visible under chips.</li>
+<li><strong>Lighting:</strong> Fluorescent fixtures, 60Hz frequency (verified acoustically). Lights never flicker. Illumination level constant (~400 lux). No visible power conduits; light source appears ambient rather than fixture-dependent.</li>
+<li><strong>Temperature:</strong> Constant 68°F (±2°F) throughout network. No temperature variation by sector or distance from surface. No visible HVAC systems.</li>
+<li><strong>Air Quality:</strong> Oxygen levels normal. Humidity consistent at ~45%. No odors reported. Air circulation detectable but source unidentified. Slight air current consistently moves eastward in primary concourse despite no visible air flow mechanism.</li>
+<li><strong>Acoustic Properties:</strong> Hallways exhibit unusual acoustic dampening. Researcher voices sound muffled despite normal ambient sound pressure levels. Echoes do not propagate normally. Sound appears absorbed within 10 meters of source.</li>
+</ul>
 
 </div>
 
 <div class="section">
+<h3>Signage & Markings</h3>
 
-<h3>Attachments</h3>
+<p>
+Corridor signage provides cryptic directional and categorical information:
+</p>
 
-<p><a href="location018.html">Location 018</a></p>
-
-<p><a href="researcher88.html">Researcher 88</a></p>
+<ul>
+<li><strong>"SECTOR" designations:</strong> Sectors numbered 1-19 (incomplete set; gaps at 7, 11, 15). Sector 7 referenced but never directly located. Sector mapping does not correspond with actual corridor locations.</li>
+<li><strong>"AUTHORIZED PERSONNEL ONLY":</strong> Appears on 40+ sealed doorways. Dates of sealing vary (marks range from 1970s to 1990s in style). No active personnel have been encountered.</li>
+<li><strong>"NO ENTRY — ACTIVE SYSTEMS":</strong> Maintenance tunnel signage. Appears throughout sub-basement passages. "Active systems" not identified. No operational systems have been observed in maintenance areas.</li>
+<li><strong>Room/Zone Numbering:</strong> Numerical designations (e.g., "Zone 47A," "Room R-12") appear inconsistently. Numbers do not follow sequential logic. Same numbering appears in multiple, non-adjacent locations.</li>
+<li><strong>Faded Directional Markers:</strong> Arrows and directional indicators painted on floors (worn linoleum suggests decades of fading). Markers point in directions that contradict corridor layout. Markers occasionally point toward walls.</li>
+<li><strong>Unknown Symbols:</strong> Repeating geometric patterns stenciled on walls at regular intervals. Patterns appear to be informational rather than decorative. Meaning not determined. Symbols identical to those observed in Entry 092 and Entry 142.</li>
+</ul>
 
 </div>
 
-<a href="entries.html">Return to Archive Index</a>
+<div class="section">
+<h3>Recurring Phenomena</h3>
 
-<!-- there is no center -->
-<!-- room zero referenced 12 times -->
+<p class="timestamp">[Observed across multiple expeditions]</p>
+
+<ul>
+<li><strong>Disorientation Following Long Passages:</strong> After traversing 200+ meters in corridor sections, researchers report spatial awareness distortion. Inability to accurately determine direction of travel origin. Sensation of corridors "shifting around them" while standing still. Effect typically resolves within 5 minutes of stopping.</li>
+
+<li><strong>Secondary Footsteps:</strong> Multiple researchers have reported hearing additional footsteps not attributable to expedition team members. Footsteps heard in distant corridor sections. Footsteps never localized or identified. Phenomenon reported in 8 separate expeditions.</li>
+
+<li><strong>Unseen Occupants:</strong> Peripheral vision phenomena — researchers report awareness of "presence" or "movement" in adjacent passages without visual confirmation. Attempts to locate source result in re-emergence at Central Hub or Primary Concourse regardless of direction pursued.</li>
+
+<li><strong>Temporal Loops:</strong> Rare occurrences where researcher appears to revisit identical corridor sections with identical markers, environmental details, and damage patterns. Separation between passages measured: 30-80 meters apart. Possible explanation: repeated physical passages versus looping spatial geometry.</li>
+
+<li><strong>Audio Distortion:</strong> Researchers' own voices sound unfamiliar. Speech registers at unexpected pitch and timbre in audio recordings. Speech appears to originate from corridor rather than from speaker position. Effect documented in Survey 204-D video footage.</li>
+
+<li><strong>Sensory Shift After Extended Duration:</strong> Passages appear to subtly change color, wall texture, and spatial geometry after researcher has been present for 30+ minutes. Changes are gradual and difficult to document. Upon review of video, environmental changes are not apparent in recordings.</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Item Documentation</h3>
+
+<p class="timestamp">[Physical artifacts recovered from network]</p>
+
+<div class="field-note">
+<p>
+<strong>Item 204-A: Employee ID Badge (undated)</strong><br>
+Recovered from floor junction near Central Hub. Badge displays photograph of personnel (gender unclear, features partially obscured). Name field shows: [redacted]. Affiliation: "FACILITY SERVICES." Badge appears aged; plastic is cracked and discolored. Photograph quality suggests 1980s-era production. No matching personnel in current archive records. Badge does not grant physical access (tested by Researcher 88; badge rejected by door locks).
+</p>
+
+<p>
+<strong>Item 204-B: Maintenance Log (partial, 4 pages)</strong><br>
+Recovered from maintenance tunnel junction. Handwritten log, entries dated 1998-2003. Entries describe routine maintenance tasks (lighting repairs, floor patching, wall painting). Final entry (2003-11-14) reads: "Sector 7 repairs complete. Access point sealed per directive. Note: new paint does not hold on west wall. Recommendation: sub-wall evaluation." Final entry is incomplete; signature is illegible. No maintenance team has been active in network since 2003 per current staff records.
+</p>
+
+<p>
+<strong>Item 204-C: Architectural Blueprint (partial, heavily damaged)</strong><br>
+Water-damaged blueprint recovered from sealed utility room. Blueprint shows network layout from approximately 1995 construction or renovation phase. Map shows significantly fewer passages than currently documented (approximately 12 primary corridors vs. current 30-47 branches). Central hub is identical. Blueprint annotation indicates "final sub-level not completed — see revised plans." Revised plans not located. Blueprint shows Sector 7 marked as "QUARANTINE ZONE — DO NOT ACCESS." Purpose unclear.
+</p>
+
+<p>
+<strong>Item 204-D: Audio Cassette (recovered, not played)</strong><br>
+Unlabeled audio cassette found in maintenance junction. Case is corroded; label is illegible. Cassette itself appears intact but damaged. Archive conservators have declined to attempt playback, citing risk of equipment damage or potential hazardous content. Cassette remains in secure storage.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Safety Protocols & Restrictions</h3>
+
+<div class="data-corrupted">
+<p class="warning">
+⚠ MANDATORY: All expeditions require minimum 2-person teams. Personnel must maintain continuous
+visual or audio contact. Maximum expedition duration: 3 hours (external time). Surface support team must
+maintain active monitoring via biometric sensors and periodic radio check-ins. Do not enter Sector 7 or
+sealed "AUTHORIZED PERSONNEL ONLY" passages under any circumstances. Sealed passages may contain hazardous
+conditions or unstable infrastructure.
+</p>
+
+<p class="warning">
+⚠ CRITICAL: If disorientation occurs during expedition, immediately cease movement and contact surface
+team. Do not attempt navigation changes or course correction while disoriented. Disorientation typically
+resolves within 5-15 minutes of cessation of movement. Sit or recline in safe location (away from
+corridor edges). Resume movement only after full sensory and spatial awareness recovery.
+</p>
+
+<p class="warning">
+⚠ NAVIGATION: Do not rely on compass or GPS readings beyond Primary Concourse. Magnetic field interference
+increases in Secondary Passages. GPS reliability degrades in junction areas and octagonal chambers. Use
+physical landmark recognition and directional marking (chalk arrows, flag placement) for navigation reference.
+</p>
+
+<p class="warning">
+⚠ OBSERVATION: If secondary footsteps, voices, or perceived occupants are encountered, DO NOT attempt
+to locate or pursue. Report observation to surface team. Continue expedition along documented primary routes
+only. Pursuits of unidentified audio sources have resulted in disorientation events lasting 2-4 hours post-expedition.
+</p>
+
+<p class="warning">
+⚠ ATRIUM ACCESS: If Central Hub octagonal chamber is reached, do NOT proceed through western or northern
+passages without surface team authorization. Eastern passage typically leads to Entry 018 complex (confirmed,
+relatively safe). Northern passage leads to Entry 092 stairwell (escalation risk). Western and southern passages
+have insufficient documentation for safe exploration.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Theoretical Framework</h3>
+
+<p>
+<strong>Hypothesis 1 - Unified Subsurface Complex:</strong> Entry 204 represents primary access and navigation axis
+of a larger integrated underground facility connecting multiple archived locations. Non-Euclidean geometry at
+junctions may reflect folded or curved spatial configuration allowing long-distance connection via short passage
+traversals. Temporal discrepancies may result from relativistic effects of curved space or psychological perception
+distortion caused by spatial disorientation.
+</p>
+
+<p>
+<strong>Hypothesis 2 - Dimensional Overlay:</strong> Network exists partially or entirely in a dimensional space
+different from standard three-dimensional Euclidean geometry. Passages may connect physically separated locations
+via path through non-standard dimensional substrate. Time distortion consistent with dimensional interface effects.
+</p>
+
+<p>
+<strong>Hypothesis 3 - Compartmentalized Facility:</strong> Entry 204 is an abandoned institutional complex (government,
+military, or research facility) constructed during 1970s-1990s. Spatial anomalies result from deliberate architectural
+design or experimental construction methodology. Temporal discrepancies may be psychological or measurement artifacts.
+Non-linear mapping results from incomplete exploration or deliberate architectural deception.
+</p>
+
+<p>
+<strong>Hypothesis 4 - Active Adaptive System:</strong> Network is actively maintained by unknown personnel. Physical
+configuration changes between expeditions reflect purposeful architectural reconfiguration. Sealed passages may be
+sealed/unsealed by active system management. Temporal anomalies may reflect energy expenditure or dimensional properties
+of active systems. Unknown occupants may represent network maintenance personnel or alternative-origin inhabitants.
+</p>
+
+</div>
+
+<div class="section">
+<h3>Room Zero References</h3>
+
+<p>
+Sector 7 designation appears only on sealed maps, maintenance logs, and deprecated signage. Multiple researchers
+have speculated that Sector 7 represents "Room Zero" — the unresolved central mystery referenced across multiple
+archived entries. Specific evidence is circumstantial:
+</p>
+
+<ul>
+<li>Maintenance log final entry references "sub-level not completed"; may indicate Room Zero is subsystem underlying visible network</li>
+<li>Researcher 88 reported hearing phrase "You cannot reason with a tiger when your head is in its mouth" echoing from sealed northern passage (phrase appears as reference across multiple entries)</li>
+<li>Blueprint notation "QUARANTINE ZONE" may indicate Room Zero containment or isolation protocols</li>
+<li>Sector 7 has never been successfully located despite targeted searches</li>
+<li>Some personnel theorize Room Zero is not a location but a conceptual space — the network itself may represent Room Zero</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Unanswered Questions</h3>
+
+<ul>
+<li>What is the actual physical extent of the network?</li>
+<li>Why do mapping methodologies fail consistently?</li>
+<li>What is the source of temporal distortion within network passages?</li>
+<li>How does the network physically connect geographically separated locations?</li>
+<li>Who constructs or maintains the network's ever-changing configuration?</li>
+<li>Who is responsible for the unknown footsteps and perceived occupants?</li>
+<li>What purpose does the octagonal Central Hub serve?</li>
+<li>Why is Sector 7 sealed, and what does it contain?</li>
+<li>Are the corridor passages part of a larger integrated structure, or do they exist in alternative dimensional space?</li>
+<li>Why does the network appear to resist comprehensive mapping?</li>
+<li>Is Room Zero located within Entry 204 network?</li>
+<li>Can the network be traversed without disorientation, or is disorientation an integral property of the space?</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h3>Related Entries & Cross-References</h3>
+
+<p>
+<a href="entry018.html">Entry 018 - Educational Complex (Direct passage connection confirmed)</a>
+</p>
+
+<p>
+<a href="entry092.html">Entry 092 - Recursive Stairwell (Northern passage connection, variable accessibility)</a>
+</p>
+
+<p>
+<a href="entry142.html">Entry 142 - Shopping Structure (Rumored connection; architectural parallels)</a>
+</p>
+
+<p>
+<a href="entry011.html">Entry 011 - Observation Deck (Architectural elements reproduced in city skyline)</a>
+</p>
+
+<p>
+<a href="location018.html">Location 018 - Parallel Corridor (Referenced in network signage)</a>
+</p>
+
+<p>
+<a href="location204.html">Location 204 - Primary Access Point</a>
+</p>
+
+<p>
+<a href="personnel019.html">Researcher 19 - Primary Investigator</a>
+</p>
+
+<p>
+<a href="personnel156.html">Researcher 156 - Secondary Investigator</a>
+</p>
+
+<p>
+<a href="incident204.html">Incident 204 - Dimensional Geometry Analysis</a>
+</p>
+
+</div>
+
+<div class="footer-nav">
+<a href="entries.html">← Return to Archive Index</a>
+<a href="locations.html">Locations Directory →</a>
+<a href="incidents.html">Incidents Directory →</a>
+</div>
+
+</div>
+
+<!-- the hallway continues -->
+<!-- no center, no edge, only passages -->
+<!-- researcher 19's map contradicts itself -->
+<!-- is that failure in cartography or failure in geometry? -->
+<!-- sector 7 exists in old blueprints but not in current network -->
+<!-- was it sealed, or did it never exist? -->
+<!-- footsteps heard in maintenance tunnel match researcher 156's gait profile -->
+<!-- but researcher 156 was never alone in the network -->
+<!-- or was she? -->
+<!-- passages that led east now lead north -->
+<!-- or the compass is wrong -->
+<!-- or north moved -->
+<!-- someone maintains the lights -->
+<!-- someone replaces the linoleum -->
+<!-- someone seals the doors -->
+<!-- someone is still in sector 7 -->
+<!-- you cannot reason with a tiger when your head is in its mouth -->
 
 </body>
 </html>
