@@ -1,0 +1,379 @@
+/* 
+   THE NULL ARCHIVE
+   Global Stylesheet
+   Version 1.0
+ */
+
+:root {
+    --bg: #0b0b0b;
+    --panel: #0f0f0f;
+    --text: #d0d0d0;
+    --muted: #666;
+    --border: #333;
+    --link: #8cb4ff;
+
+    --warning: #ff8a8a;
+    --important: #ffcc66;
+    --personal: #88dd88;
+
+    --danger-bg: #1a0000;
+    --danger-border: #ff4444;
+
+    --warning-bg: #1a1600;
+    --warning-border: #ffaa00;
+
+    --missing-bg: #0a1a1a;
+    --missing-border: #4488aa;
+
+    --note-bg: #0f1a0f;
+    --note-border: #88aa88;
+
+    --fragment-bg: #1a0a0a;
+    --fragment-border: #8844aa;
+}
+
+/* 
+   Base
+ */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Courier New", monospace;
+    margin:40px;
+    line-height:1.6;
+}
+
+.container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+/* 
+   Typography
+ */
+
+h1{
+    color:#fff;
+    border-bottom:2px solid var(--border);
+    padding-bottom:10px;
+    margin-top:0;
+}
+
+h2{
+    color:#a0a0a0;
+    font-size:1.1rem;
+    letter-spacing:1px;
+    margin-top:35px;
+}
+
+h3{
+    color:var(--link);
+    font-size:.95rem;
+    margin-top:25px;
+}
+
+p{
+    margin:12px 0;
+}
+
+blockquote{
+    border-left:3px solid var(--border);
+    padding-left:15px;
+    color:#bcbcbc;
+    font-style:italic;
+}
+
+/* 
+   Links
+ */
+
+a{
+    color:var(--link);
+    text-decoration:none;
+    border-bottom:1px dotted var(--link);
+    transition:.15s ease;
+}
+
+a:hover{
+    background:#1a1a2e;
+}
+
+/* 
+   Sections
+ */
+
+.section{
+    border-left:2px solid var(--border);
+    background:var(--panel);
+    padding:15px;
+    margin:20px 0;
+}
+
+/* 
+   Metadata Tables
+ */
+
+.metadata{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:12px;
+    background:var(--panel);
+    border:1px solid #1a1a1a;
+    padding:15px;
+    margin:20px 0;
+}
+
+.metadata-label{
+    color:var(--muted);
+    font-weight:bold;
+}
+
+.metadata-value{
+    color:var(--text);
+}
+
+/* 
+   Archive Lists
+ */
+
+.entry,
+.location,
+.incident,
+.personnel{
+    padding:8px 0;
+    border-bottom:1px solid #1b1b1b;
+}
+
+.entry:last-child,
+.location:last-child,
+.incident:last-child,
+.personnel:last-child{
+    border-bottom:none;
+}
+
+/* 
+   Notes
+ */
+
+.warning{
+    color:var(--warning);
+}
+
+.note-important{
+    color:var(--important);
+}
+
+.note-personal{
+    color:var(--personal);
+    font-style:italic;
+}
+
+/* 
+   Redactions
+ */
+
+.redacted{
+    background:#2a2a2a;
+    color:#2a2a2a;
+    user-select:none;
+    transition:.2s;
+}
+
+.redacted:hover{
+    background:#3a3a3a;
+    color:#3a3a3a;
+}
+
+/* 
+   Lists
+ */
+
+ul,
+ol{
+    padding-left:20px;
+}
+
+li{
+    margin:8px 0;
+}
+
+/* 
+   Archive Status Boxes
+ */
+
+.data-corrupted{
+    background:var(--danger-bg);
+    border-left:3px solid var(--danger-border);
+    padding:12px;
+    margin:15px 0;
+}
+
+.data-warning{
+    background:var(--warning-bg);
+    border-left:3px solid var(--warning-border);
+    padding:12px;
+    margin:15px 0;
+}
+
+.data-missing{
+    background:var(--missing-bg);
+    border-left:3px solid var(--missing-border);
+    padding:12px;
+    margin:15px 0;
+    font-style:italic;
+}
+
+.personal-note{
+    background:var(--note-bg);
+    border-left:3px solid var(--note-border);
+    padding:12px;
+    margin:15px 0;
+}
+
+.fragment{
+    background:var(--fragment-bg);
+    border-left:3px solid var(--fragment-border);
+    padding:12px;
+    margin:15px 0;
+    line-height:1.4;
+}
+
+/* 
+   Inline Code
+ */
+
+code{
+    background:#1a1a1a;
+    color:var(--link);
+    padding:2px 6px;
+    border-radius:3px;
+}
+
+pre{
+    background:#111;
+    border:1px solid #222;
+    overflow-x:auto;
+    padding:15px;
+}
+
+/* 
+   Tables
+ */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+th,
+td{
+    border:1px solid #222;
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#111;
+    color:#8cb4ff;
+}
+
+/* 
+   Search Bars
+ */
+
+input,
+textarea,
+select{
+    background:#111;
+    color:var(--text);
+    border:1px solid #333;
+    padding:8px;
+    font-family:inherit;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--link);
+}
+
+/* 
+   Buttons
+ */
+
+button{
+    background:#111;
+    color:var(--text);
+    border:1px solid #333;
+    padding:8px 14px;
+    font-family:inherit;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#191919;
+}
+
+/* 
+   Footer
+ */
+
+.timestamp{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+.footer-nav{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+}
+
+.footer-nav a{
+    display:inline-block;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+/* 
+   Hidden Elements
+ */
+
+.hidden{
+    display:none;
+}
+
+.invisible{
+    color:var(--bg);
+    user-select:text;
+}
+
+/* 
+   Scrollbar
+ */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#333;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
